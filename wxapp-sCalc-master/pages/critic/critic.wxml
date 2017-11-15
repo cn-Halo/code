@@ -1,0 +1,38 @@
+<view class="section">
+    <view class="film-item" >
+        <view class="film-item-pic">
+            <image src="{{subject.images.large}}" mode='scaleToFill' data-src="{{subject.images.large}}" bindtap='previewImage'></image>
+        </view>
+        <view  class="film-item-words">
+            <view class="item-words">
+              <text>{{subject.title}}</text>
+            </view>
+            <view class="item-words">
+              <text >评分：</text>
+              <text style='color:red'>{{subject.rating.average}}</text>
+            </view> 
+            <view class="item-words">
+              <text >标签：</text>
+              <block  wx:for="{{subject.genres}}" wx:for-item="genre" >
+                  <text>{{genre+" "}}</text>
+              </block>
+            </view>
+            <view class="item-words">
+              <text >主演：</text>
+              <block  wx:for="{{subject.casts}}" wx:for-item="cast" >
+                  <text>{{cast.name+" "}}</text>
+              </block>
+            </view>
+        </view> 
+    </view>
+    <view class='plot'>
+        <view class='plot-title'>
+          <text>剧情简介：</text>
+        </view> 
+        <view class='plot-content'>
+          <text>{{subject.summary}}</text>
+        </view>      
+      </view>
+</view>  
+
+  

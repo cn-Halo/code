@@ -1,0 +1,9 @@
+.wxskm{
+  height: 650rpx;
+  width: 450rpx;
+  margin-top: 20rpx;
+}
+view{
+  margin-top: 50rpx;
+  text-align: center
+}

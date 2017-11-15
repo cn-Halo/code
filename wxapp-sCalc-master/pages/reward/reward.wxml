@@ -1,0 +1,4 @@
+<view>
+  <text>如您喜欢，欢迎打赏(●'◡'●)</text>
+  <image src='../../img/wxskm.jpg' class="wxskm" bindtap="tapName"></image>
+</view>

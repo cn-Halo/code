@@ -1,0 +1,30 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.film-item{
+  padding: 10px;
+  display: flex;
+  font-size: 14px;
+}
+.film-item-pic{
+  width: 128px;
+}
+.film-item-pic image{
+  width: 100%;
+  height: 180px;
+}
+.film-item-words{
+  padding-left: 10px;
+  flex: 1;
+}
+.film-item-words view{
+  margin-bottom: 10px;
+}

@@ -1,0 +1,11 @@
+.plot{
+  float: left;
+  padding:10px;
+}
+.plot-title {
+    color: #AAAAAA;
+}
+.plot-content{
+  font-size:14px;
+  margin-top:6px;
+}

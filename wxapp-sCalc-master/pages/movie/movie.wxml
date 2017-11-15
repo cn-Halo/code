@@ -1,0 +1,157 @@
+<!--导航条-->  
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+</view>  
+  
+<!-- 正在上映   -->
+<view hidden="{{currentTab!==0}}">  
+   <view class="section">
+    <scroll-view scroll-y style='height:{{height}}px' bindscrolltolower='lower'>
+    <block wx:for="{{subjects}}">
+      <navigator url="/pages/critic/critic?id={{item.id}}"> 
+        <view class="film-item">
+          <view class="film-item-pic">
+              <image src="{{item.images.large}}" mode='scaleToFill'></image>      
+          </view>
+            <view  class="film-item-words">
+              <view>
+                <text>{{item.title}}</text>
+              </view>
+              <view >
+                <text >评分：</text>
+                <text style='color:red'>{{item.rating.average}}</text>
+              </view> 
+              <view>
+                <text >标签：</text>
+                <block  wx:for="{{item.genres}}" wx:for-item="genre" >
+                    <text>{{genre+" "}}</text>
+                </block>
+                </view>
+                <view>
+                <text >主演：</text>
+                <block  wx:for="{{item.casts}}" wx:for-item="cast" >
+                    <text>{{cast.name+" "}}</text>
+                </block>
+                </view>
+            </view> 
+          </view>
+        </navigator> 
+      </block>
+    </scroll-view>
+  </view> 
+</view>  
+  
+<!--即将上映-->  
+<view hidden="{{currentTab!==1}}">  
+     <view class="section">
+    <scroll-view scroll-y style='height:{{height}}px' bindscrolltolower='lower'>
+    <block wx:for="{{subjects}}">
+     <navigator url="/pages/critic/critic?id={{item.id}}"> 
+      <view class="film-item">
+          <view class="film-item-pic">
+              <image src="{{item.images.large}}" mode='scaleToFill'></image>      
+          </view>
+            <view  class="film-item-words">
+              <view>
+                <text>{{item.title}}</text>
+              </view>
+              <view >
+                <text >评分：</text>
+                <text style='color:red'>{{item.rating.average}}</text>
+              </view> 
+              <view>
+                <text >标签：</text>
+                <block  wx:for="{{item.genres}}" wx:for-item="genre" >
+                    <text>{{genre+" "}}</text>
+                </block>
+                </view>
+                <view>
+                <text >主演：</text>
+                <block  wx:for="{{item.casts}}" wx:for-item="cast" >
+                    <text>{{cast.name+" "}}</text>
+                </block>
+                </view>
+          </view> 
+         </view>
+       </navigator> 
+      </block>
+    </scroll-view>
+  </view> 
+</view>  
+  
+<!--北美票房榜-->  
+<view hidden="{{currentTab!==2}}">  
+ <view class="section">
+    <scroll-view scroll-y style="{{windowHeight}}">
+    <block wx:for="{{subjects}}">
+     <navigator url="/pages/critic/critic?id={{item.subject.id}}"> 
+      <view class="film-item">
+          <view class="film-item-pic">
+              <image src="{{item.subject.images.large}}" mode='scaleToFill'></image>      
+          </view>
+            <view  class="film-item-words">
+              <view>
+                <text>{{item.subject.title}}</text>
+              </view>
+              <view >
+                <text >评分：</text>
+                <text style='color:red'>{{item.subject.rating.average}}</text>
+              </view> 
+              <view>
+                <text >标签：</text>
+                <block  wx:for="{{item.subject.genres}}" wx:for-item="genre" >
+                    <text>{{genre+" "}}</text>
+                </block>
+                </view>
+                <view>
+                <text >主演：</text>
+                <block  wx:for="{{item.subject.casts}}" wx:for-item="cast" >
+                    <text>{{cast.name+" "}}</text>
+                </block>
+                </view>
+          </view> 
+      </view>
+       </navigator> 
+      </block>
+    </scroll-view>
+  </view> 
+</view>  
+
+<!-- Top250   -->
+<view hidden="{{currentTab!==3}}">  
+   <view class="section">
+    <scroll-view scroll-y style='height:{{height}}px' bindscrolltolower='lower'>
+    <block wx:for="{{subjects}}">
+      <navigator url="/pages/critic/critic?id={{item.id}}"> 
+        <view class="film-item">
+          <view class="film-item-pic">
+              <image src="{{item.images.large}}" mode='scaleToFill'></image>      
+          </view>
+            <view  class="film-item-words">
+              <view>
+                <text>{{item.title}}</text>
+              </view>
+              <view >
+                <text >评分：</text>
+                <text style='color:red'>{{item.rating.average}}</text>
+              </view> 
+              <view>
+                <text >标签：</text>
+                <block  wx:for="{{item.genres}}" wx:for-item="genre" >
+                    <text>{{genre+" "}}</text>
+                </block>
+                </view>
+                <view>
+                <text >主演：</text>
+                <block  wx:for="{{item.casts}}" wx:for-item="cast" >
+                    <text>{{cast.name+" "}}</text>
+                </block>
+                </view>
+            </view> 
+          </view>
+        </navigator> 
+      </block>
+    </scroll-view>
+  </view> 
+</view>  
+

@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/calc/calc",
+    "pages/history/history",
+    "pages/logs/logs",
+    "pages/content/content",
+    "pages/food/food",
+    "pages/movie/movie",
+    "pages/critic/critic",
+    "pages/reward/reward"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1aad19",
+    "navigationBarTitleText": "小助手",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#1aad19",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "./img/tobar_home_unselected.png",
+        "selectedIconPath": "./img/tobar_home_selected.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "./img/tobar_movie_unselected.png",
+        "selectedIconPath": "./img/tobar_movie_selected.png"
+      },
+      {
+        "pagePath": "pages/calc/calc",
+        "text": "计算器",
+        "iconPath": "./img/tobar_computer_unselected.png",
+        "selectedIconPath": "./img/tobar_computer_selected.png"
+      },
+      {
+        "pagePath": "pages/food/food",
+        "text": "美食",
+        "iconPath": "./img/tobar_food_unselected.png",
+        "selectedIconPath": "./img/tobar_food_selected.png"
+      },
+      {
+        "pagePath": "pages/reward/reward",
+        "text": "打赏",
+        "iconPath": "./img/tobar_reward_unselected.png",
+        "selectedIconPath": "./img/tobar_reward_selected.png"
+      }
+    ]
+  }
+}

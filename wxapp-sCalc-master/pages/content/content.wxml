@@ -1,0 +1,23 @@
+<view>
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="swiper-item"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view>
+    <text>新闻动态</text>
+     <view class="news-item line">
+            
+            <view class="news-item-words">
+                <view class="news-item-title"><text>{{news[0].excerpt}}</text></view>
+                <view class="news-item-content"><text>{{news[0].excerpt_plain}}</text></view>
+            </view>
+        </view>
+  </view>
+
+</view>
